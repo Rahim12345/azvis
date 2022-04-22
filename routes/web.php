@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -52,6 +53,7 @@ Route::group(['prefix'=>'admin','middleware'=>['auth', 'locale']],function (){
 
     Route::resource('doctor', DoctorController::class);
     Route::resource('about', AboutController::class);
+    Route::resource('service', ServiceController::class);
 
 
 });

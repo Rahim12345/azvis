@@ -73,6 +73,9 @@
                             <a class="dropdown-item" href="{{ route('about.create') }}" >
                                 Haqqımızda
                             </a>
+                            <a class="dropdown-item" href="{{ route('service.index') }}" >
+                                Xidmətlər
+                            </a>
                         </div>
                     </li>
                 </ul>
