@@ -21,7 +21,7 @@ class HomeController extends Controller
     public function indexPost()
     {
         $this->validate(\request(),[
-            'image_slider'=>'required|image|max:2048',
+            'image_slider'=>'required',
             'text'=>['required','max:255',new FieldThreeLangs()],
         ],[],[
             'image_slider'=>'Foto',

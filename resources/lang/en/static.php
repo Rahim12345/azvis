@@ -43,4 +43,6 @@ return [
     'nomre'=>'Phone Number',
     'mesaj'=>'Message',
     'contact_success'=>'Your message was sent successfully',
+    'onlayn_qeydiyyat'=>'ONLINE REGISTRATION',
+    'sirket_haqqinda'=>'ABOUT THE COMPANY',
 ];

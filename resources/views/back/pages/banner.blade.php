@@ -40,7 +40,19 @@
                     <table class="table">
                         @foreach($banners as $banner)
                             <tr>
-                                <td><img src="{{ asset('files/home/'.$banner->src) }}" alt="" style="width: 100px;"></td>
+                                <td>
+                                    @php
+                                    $ext = explode('.',$banner->src)[1];
+                                    @endphp
+                                    @if($ext != 'mp4')
+                                    <img src="{{ asset('files/home/'.$banner->src) }}" alt="" style="width: 100px;">
+                                    @else
+                                        <video width="100" controls>
+                                            <source src="{{ asset('files/home/'.$banner->src) }}" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    @endif
+                                </td>
                                 <td>{{ $banner->text_az }}</td>
                                 <td>
                                     <form action="{{ route('back.banner.delete',$banner->id) }}" method="POST">

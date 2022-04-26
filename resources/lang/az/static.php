@@ -43,4 +43,6 @@ return [
     'nomre'=>'Nömrə',
     'mesaj'=>'Mesaj',
     'contact_success'=>'Mesaj uğurla göndərildi',
+    'onlayn_qeydiyyat'=>'ONLAYN GEYDİYYAT',
+    'sirket_haqqinda'=>'ŞİRKƏT HAQQINDA',
 ];

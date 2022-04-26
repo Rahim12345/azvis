@@ -2,13 +2,14 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\front\PagesController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('front.home');
+Route::group(['middleware'=>'locale'],function (){
+    Route::get('/', [PagesController::class,'home'])->name('front.home');
+});
 
 
 Route::get('langs/{locale}',[App\Http\Controllers\profileController::class,'langSwitcher'])

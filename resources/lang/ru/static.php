@@ -43,4 +43,6 @@ return [
     'nomre'=>'Номер',
     'mesaj'=>'Сообщение',
     'contact_success'=>'Сообщение успешно отправлено',
+    'onlayn_qeydiyyat'=>'ОНЛАЙН РЕГИСТРАЦИЯ',
+    'sirket_haqqinda'=>'О КОМПАНИИ',
 ];
